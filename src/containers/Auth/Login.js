@@ -1,18 +1,18 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { push } from "connected-react-router";
-import * as actions from "../../store/actions";
-
+import { push } from 'connected-react-router';
+import {handleLoginApi} from '../../services/userService';
+import * as actions from '../../store/actions';
 import './Login.scss';
 import { FormattedMessage } from 'react-intl';
-import {handleLoginApi} from '../../services/userService';
 
 class Login extends Component {
     constructor(props) {
         super(props);
         this.state = {
             username : '',
-            password : ''
+            password : '',  
+            errMessage: ''
         }
     }   
 
@@ -28,14 +28,31 @@ class Login extends Component {
     }
     
     handleLogin = async () => {
-        console.log('username: ' + this.state.username);
-        console.log('password: ' + this.state.password);
-        console.log('all state: ', this.state);
+//      clear mã lỗi trước khi login
+        this.setState({          //|
+            errMessage:''        //|   36'33
+        })                       //|    
+//-------------------------------//|
 
         try {
-            await handleLoginApi(this.state.username, this.state.password)
-        } catch (e) {
-            console.log(e)
+            let data = await handleLoginApi(this.state.username, this.state.password);
+            
+            if(data && data.errCode !== 0){
+                this.setState({          
+                    errMessage:data.message        
+                })
+            }else if(data && data.errCode === 0){
+                this.props.userLoginSuccess(data.user)
+                console.log('Login success.')
+            }
+        } catch (error) {
+            if(error.response){
+                if(error.response.data){
+                    this.setState({
+                        errMessage : error.response.data.message
+                    })
+                }
+            }
         }
     }
     render() {
@@ -53,6 +70,9 @@ class Login extends Component {
                             <label className='lb-login'>Password:</label>
                             <input type='password' className='form-control login-input' placeholder='Enter your password' 
                                     value={this.state.password} onChange={(event) => {this.handleOnchangePassword(event)}}/>
+                        </div>
+                        <div className='col-12 lb-error' style={{color : 'red' }}>
+                            {this.state.errMessage}
                         </div>
                         <div className='col-12'>
                             <button className='btn-login' onClick={() => {this.handleLogin()}}>Login</button>
@@ -83,8 +103,8 @@ const mapStateToProps = state => {
 const mapDispatchToProps = dispatch => {
     return {
         navigate: (path) => dispatch(push(path)),
-        adminLoginSuccess: (adminInfo) => dispatch(actions.adminLoginSuccess(adminInfo)),
-        adminLoginFail: () => dispatch(actions.adminLoginFail()),
+        // userLoginFail: () => dispatch(actions.adminLoginFail()),
+        userLoginSuccess: (userInfo) => dispatch(actions.userLoginSuccess(userInfo))
     };
 };
 
