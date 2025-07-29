@@ -1,4 +1,27 @@
 {
+    "homeheader": {
+        "speciality": "Medical specialty",
+        "searchdoctor":"Find a doctor by specialty",
+        "health-facility": "Medical facility",
+        "select-room": "Select hospital clinic",
+        "doctor": "Doctor",
+        "select-doctor": "Choose a good doctor",
+        "fee": "Medical examination package",
+        "check-health": "General health check",
+        "support": "Support"
+    },
+    "banner": {
+        "title1": "MEDICAL PLATFORM",
+        "title2": "COMPREHENSIVE HEALTH CARE",
+        "search": "Search for a specialty",
+        "option1":"Specialist Examination",
+        "option2":"Telemedicine",
+        "option3":"General Examination",
+        "option4":"Medical Tests",
+        "option5":"Mental Health",
+        "option6":"Dental Examinatio"
+
+    },
     "common": {
         "add": "Add",
         "edit": "Edit",
