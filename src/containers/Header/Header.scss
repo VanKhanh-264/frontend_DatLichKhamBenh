@@ -7,7 +7,41 @@
     background-color: $colormain;
     color: $common-text-color;
     height: 40px;
-    position: relative;
+    position: relative; 
+        .language-vi{
+            padding: 4px 8px;
+            
+            &.active{
+                background-color: #f7d800;
+                border-radius: 50px 8px 8px 50px;
+                padding: 4px 8px;
+                color: black;
+            }
+
+            &:hover{
+                background-color: rgb(195, 190, 190);
+                border-radius: 50px 8px 8px 50px;
+                padding: 4px 8px;   
+            }
+        }    
+        .language-en{
+            padding-left: 6px;
+            margin-right: 15px;
+            padding: 4px 8px;
+            cursor: pointer;
+            &.active{
+                background-color: #3de15b;
+                border-radius: 8px 50px 50px 8px ;
+                padding: 4px 8px;
+                color: black;
+            }
+            &:hover{
+                background-color: rgb(195, 190, 190);
+                border-radius: 8px 50px 50px 8px ;
+                padding: 4px 8px;
+            }
+        }
+    
     .btn-logout {
         color: $common-text-color;
         line-height: 40px;

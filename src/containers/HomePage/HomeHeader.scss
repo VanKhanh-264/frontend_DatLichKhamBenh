@@ -2,6 +2,10 @@
     height: 72px;
     width: 100%;
     padding: 0 100px;
+    position: sticky;
+    top: 0;
+    z-index: 10000;
+    background: white;
 
     .home-header-content{
         width: 100%;
@@ -70,7 +74,7 @@
                 padding-right: 6px;
 
                 &.active{
-                    background-color: red;
+                    background-color: #f7d800;
                     border-radius: 50px 8px 8px 50px;
                     width: 32px;
                     height: 28px;
@@ -95,7 +99,7 @@
                 cursor: pointer;
 
                 &.active{
-                    background-color: blue;
+                    background-color: #49bce2;
                     border-radius: 8px 50px 50px 8px ;
                     width: 32px;
                     height: 28px;
@@ -171,7 +175,7 @@
     .content-down{
         height: 35%;
         background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.9),rgba(255, 255, 255, 1));
-
+        // padding-bottom: 10px;
 
         .options{
             display: flex;

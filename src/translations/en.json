@@ -13,7 +13,7 @@
     "banner": {
         "title1": "MEDICAL PLATFORM",
         "title2": "COMPREHENSIVE HEALTH CARE",
-        "search": "Search for a specialty",
+        "search": "Search for medical specialties",
         "option1":"Specialist Examination",
         "option2":"Telemedicine",
         "option3":"General Examination",
@@ -54,7 +54,7 @@
             "system-administrator": {
                 "header": "System Administrator",
                 "user-manage": "User manage",
-                "product-manage": "Package manage",
+                "user-redux": "Manage user using redux",
                 "register-package-group-or-account": "Register service package for group/account"
             },
             "system-parameter": {

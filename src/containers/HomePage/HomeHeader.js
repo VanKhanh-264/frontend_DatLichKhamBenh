@@ -4,7 +4,6 @@ import { FormattedMessage } from 'react-intl';
 import './HomeHeader.scss';
 import { LANGUAGES } from '../../utils/constant';
 import { changeLanguageApp } from '../../store/actions';
-import { lang } from 'moment';
 
 class HomeHeader extends Component {
 
