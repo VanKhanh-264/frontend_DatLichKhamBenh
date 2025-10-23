@@ -54,6 +54,7 @@
         "position": "Position",
         "role-id": "Role ID",
         "image": "Image",
-        "save": "Save"
+        "save": "Add new user",
+        "edit": "Save changes"
     }
 }
