@@ -22,6 +22,7 @@
         "option4":"Xét nghiệm y học",
         "option5":"Sức khỏe tinh thần",
         "option6":"khám nha khoa"
+        
     },
     "menu": {
         "admin":{
@@ -53,6 +54,11 @@
         "image": "Ảnh",
         "save": "Thêm người dùng",
         "edit": "Lưu thay đổi"
+    },
+    "homepage": {
+        "outstanding-doctor": "Bác sĩ nổi bậc tuần qua",
+        "more": "Xem thêm"
+
     }
     
 }
