@@ -1,7 +1,7 @@
 {
     "homeheader": {
         "speciality": "Medical specialty",
-        "searchdoctor":"Find a doctor by specialty",
+        "searchdoctor": "Find a doctor by specialty",
         "health-facility": "Medical facility",
         "select-room": "Select hospital clinic",
         "doctor": "Doctor",
@@ -15,18 +15,16 @@
         "title1": "MEDICAL PLATFORM",
         "title2": "COMPREHENSIVE HEALTH CARE",
         "search": "Search for medical specialties",
-        "option1":"Specialist Examination",
-        "option2":"Telemedicine",
-        "option3":"General Examination",
-        "option4":"Medical Tests",
-        "option5":"Mental Health",
-        "option6":"Dental Examinatio"
-
+        "option1": "Specialist Examination",
+        "option2": "Telemedicine",
+        "option3": "General Examination",
+        "option4": "Medical Tests",
+        "option5": "Mental Health",
+        "option6": "Dental Examinatio"
     },
-    
     "menu": {
-        "admin":{
-            "manage-user": "Users System",
+        "admin": {
+            "manage-user": "Users",
             "manage-doctor": "Doctor Management",
             "manage-admin": "Admin Management",
             "crud": "CRUD users",
@@ -37,11 +35,12 @@
             "manage-specialty": "Specialty Management",
             "handbook": "Handbooks",
             "manage-handbook": "Handbook Management"
-            
-            
+        },
+        "doctor": {
+            "manage-schedule": "Manage Doctor's schedule"
         }
     },
-    "manage-user":{
+    "manage-user": {
         "title": "NGƯỜI DÙNG REDUX BỞI VANKHANH",
         "add": "Add new user",
         "email": "Email",

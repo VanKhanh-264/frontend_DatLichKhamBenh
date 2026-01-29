@@ -1,8 +1,7 @@
 {
-
-    "homeheader":{
-        "speciality" : "Chuyên khoa",
-        "searchdoctor":"Tìm bác sĩ theo chuyên khoa",
+    "homeheader": {
+        "speciality": "Chuyên khoa",
+        "searchdoctor": "Tìm bác sĩ theo chuyên khoa",
         "health-facility": "Cơ sở y tế",
         "select-room": "Chọn bệnh viên phòng khám",
         "doctor": "Bác sĩ",
@@ -16,17 +15,16 @@
         "title1": "NỀN TẢNG Y TẾ",
         "title2": "CHĂM SÓC SỨC KHỎE TOÀN DIỆN",
         "search": "Tìm kím chuyên khoa",
-        "option1":"Khám chuyên khoa",
-        "option2":"Khám từ xa",
-        "option3":"Khám tổng quát",
-        "option4":"Xét nghiệm y học",
-        "option5":"Sức khỏe tinh thần",
-        "option6":"khám nha khoa"
-        
+        "option1": "Khám chuyên khoa",
+        "option2": "Khám từ xa",
+        "option3": "Khám tổng quát",
+        "option4": "Xét nghiệm y học",
+        "option5": "Sức khỏe tinh thần",
+        "option6": "khám nha khoa"
     },
     "menu": {
-        "admin":{
-            "manage-user": "Quản lý người dùng",
+        "admin": {
+            "manage-user": "Người dùng",
             "manage-doctor": "Quản lý bác sĩ",
             "manage-admin": "Quản lý admin",
             "crud": "CRUD người dùng",
@@ -36,10 +34,13 @@
             "specialty": "Chuyên khoa",
             "manage-specialty": "Quản lý chuyên khoa",
             "handbook": "Cẩm nang",
-            "manage-handbook": "Quản lý cẩm nang" 
+            "manage-handbook": "Quản lý cẩm nang"
+        },
+        "doctor": {
+            "manage-schedule": "Quản lý lịch khám"
         }
     },
-    "manage-user":{
+    "manage-user": {
         "title": "USER REDUX BY VANKHANH",
         "add": "Thêm mới người dùng",
         "email": "Email",
@@ -58,7 +59,5 @@
     "homepage": {
         "outstanding-doctor": "Bác sĩ nổi bậc tuần qua",
         "more": "Xem thêm"
-
     }
-    
 }
