@@ -56,6 +56,12 @@
         "save": "Add new user",
         "edit": "Save changes"
     },
+    "manage-schedule": {
+        "title": "Manage Doctor's schedule",
+        "choose-doctor": "Choose doctor",
+        "choose-date": "Choose date",
+        "save-info": "Save infor"
+    },
     "homepage": {
         "outstanding-doctor": "Outstanding doctors of last week",
         "more": "See more..."
